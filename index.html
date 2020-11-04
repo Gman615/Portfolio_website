@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Garrett Aspacher</title>
+        <link rel="stylesheet" type="text/css" href="css/garrett_aspacher.css">
+        <script src="js/main.js" defer></script>
+    </head>
+<!-- END HEAD -->
+
+<!-- BODY -->
+<body class="background">
+
+<!-- NAVBAR -->
+    <div class="Navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#github">GitHub</a>
+        <a onclick="aFunction()" ondblclick="bFunction()">Contact</a>
+    </div>
+<!-- END NAVBAR-->
+
+<!-- HOME -->
+    <div id="home">
+        <br>
+        <br>
+    
+<!-- VIDEO HOME SECTION -->
+        <video autoplay muted loop id="waterfall">
+            <source src="./img/waterfall.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+<!-- HOME TEXT -->
+    <div class="video_text">
+        <h1 style="color:white;">Garrett Aspacher's Portfolio</h1>
+            <p>
+                <strong>
+                    <center>
+                        <q>A good programmer is someone who always looks both ways before crossing a one-way street.</q> 
+                        <br>-Doug Linder<br>
+                        My name is Garrett Aspacher. Welcome to my portfolio website. On it, I will tell you about my background and experience.<br>
+                        <br>Thank you for stopping by and I hope to hear from you!
+                    </center>
+                </strong>
+            </p>
+    </div>
+<!-- END HOME VIDEO SECTION-->
+
+<!-- SLIDESHOW SECTION -->
+<div id="Slideshow">
+    <div id="Slideshow_Background">
+        <div id="Slideshow_Container">
+            <div class="mySlides fade">
+                <div class=Slide_Number>1 / 6</div>
+                    <img class="Slide_Show_Images" src="./img/me.jpg" style="width:100%">
+                    <div class="text">I am ready to help you with a project</div>
+            </div>
+            <div class="mySlides fade">
+                <div class=Slide_Number>2 / 6</div>
+                    <img class="Slide_Show_Images" src="./img/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+                    <div class="text">I know full-stack software development,<br> trained in: HTML, CSS, and JavaScript</div>
+            </div>
+            <div class="mySlides fade">
+                <div class=Slide_Number>3 / 6</div>
+                    <img class="Slide_Show_Images" src="./img/SQL_and_Database.jpg" style="width:100%">
+                    <div class="text">back end development, databases, SQL</div>
+            </div>
+            <div class="mySlides fade">
+                <div class=Slide_Number>4 / 6</div>
+                    <img class="Slide_Show_Images" src="./img/Python.png" style="width:100%">
+                    <div class="text">Python</div>
+            </div>
+            <div class="mySlides fade">
+                <div class=Slide_Number>5 / 6</div>
+                    <img class="Slide_Show_Images" src="./img/C_Sharp_and_Dot_NET.png" style="width:100%">
+                    <div class="text">C# and .NET Framework, ASP.NET, and NVC </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="Slide_Number">6 / 6</div>
+                    <img class="Slide_Show_Images" src="./img/Coding_1.jpg" style="width:100%">
+                        <div class="text">
+                            <a onclick="aFunction()" href="#contact" style="color: white;">Contact me now!</a>
+                        </div>
+            </div>     
+            
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    <br>
+                <!-- Dots for SS-->
+        <div style="text-align:center;">
+
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+
+        </div>      
+    </div>
+</div>           
+<!-- END SLIDESHOW-->
+
+<!-- ABOUT -->
+    <div class="row" id="about">
+        <div class="column_2">
+            <img src="./img/laptop.jpg" alt="Laptop">
+        </div>
+
+        <div class="column_1">
+            <h1>About</h1>
+                <p>I am a software developer and I realized not too long ago that I love coding!<br>
+                    I am a young professional living in Denver, CO.<br>
+                    <br>I enrolled at <a href="https://www.learncodinganywhere.com" target="blank">The Tech Academy</a> to follow my dreams, and I have graduated from their software development program.<br>
+                    <a href="#contact">Contact</a> me here for more info!
+                 </p>
+        </div>
+    </div>
+<!-- END ABOUT-->
+
+<!-- GITHUB SECTION-->
+    <div class="row" id="github">
+        <div class="column_1">
+            <h1>GitHub</h1>
+                <p>You can view my coding projects on my GitHub profile here:<br>
+                <center><a href="https://github.com/Gman615" target="_blank">The Tech Academy Github</a></center></p>
+        </div>
+
+        <div class="column_2">
+            <a href="https://github.com/Gman615" target="_blank"><img src="./img/GitHub.png" alt="GitHub"></a>
+        </div>
+    </div>
+<!-- END GITHUB -->
+
+<!-- CONTACT SECTION -->
+    <div id="contact">
+        <button class="Pop_Up_Button" onclick="aFunction()">Contact</button>        
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                <h1>Contact</h1>
+                    <label for="name">Name:</label>
+                        <input type="text" placeholder="Please enter your name here" name="name" required>
+                    <label for="phone">Phone:</label>
+                        <input type="text" placeholder="Phone Number" name="phone">
+                    <label for="email">Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here" name="email" required>
+                    <label for="message">Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here" name="message">
+        
+        <button type="submit" class="btn">SUBMIT</button>
+        <button type="button" value="btn cancel" onclick="bFunction()">CLOSE</button>
+                </form>
+        </div>
+    </div>
+<!-- END CONTACT SECTION-->
+
+<!-- FOOTER SECTION -->
+    <footer>
+        <p>
+            <center>&copy Prosper Consulting Inc., <a href="https://learncodinganywhere.com/"</center>
+        </p>
+    </footer>
+
+        </body>
+
+</html>
